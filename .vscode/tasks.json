@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Stress Test",
+            "type": "npm",
+            "script": "buildStress",
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "tsc src/get-200-status-test-stress.ts --outDir dist"
+        },
+        {
+            "label": "Run Stress Test",
+            "type": "npm",
+            "script": "buildStress",
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "k6 run dist/get-200-status-test-stress.js"
+        },
+    ]
+}

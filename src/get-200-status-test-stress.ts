@@ -3,12 +3,14 @@ import { Options } from 'k6/options';
 import http from 'k6/http';
 
 export let options:Options = {
-  vus: 50,
-  duration: '10s'
+  stages: [
+    { duration: '120s', target: 5 },
+    { duration: '60s', target: 10 },
+  ]
 };
 
 export default () => {
-  const res = http.get('https://test-api.k6.io');
+  const res = http.get('https://api.dev.cosmos.so/graphql');
   check(res, {
     'status is 200': () => res.status === 200,
   });
