@@ -10,7 +10,7 @@ export let options:Options = {
 };
 
 export default () => {
-  const res = http.get('https://api.dev.cosmos.so/graphql');
+  const res = http.get('https://test-api.k6.io');
   check(res, {
     'status is 200': () => res.status === 200,
   });
