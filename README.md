@@ -3,13 +3,13 @@ Repository for my performance testing with k6.
 ## Quick tutorial
 
 - Clone the repository
-- Run "npm start"
-- Run "npm run bBase"
-- Run "npm run tBase"
+- Open Command Pallete (View -> Command Pallete)
+- Search for "Tasks: Run Task"
+- Choose "FULL <X> test"
+- Enjoy
 
 ## Tutorial Explanation
 
-- Run "npm start" -> Runs the webpack for next commands
-- Run "npm run bBase" -> builds the javascript test file from typescript test file
-- Run "npm run tBase" -> runs the javascript test file
-- the bBase and tBase are scripts. bBase, builds the base test. tBase, runs the base test.
+- For now the most optimal way to run the test scripts is via command pallete
+- I predefined the scripts, so you can just choose which to run
+- To see the scripts see package.json and .vscode/tasks.json
