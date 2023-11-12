@@ -1,95 +1,95 @@
-{
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "FULL Base test",
-            "dependsOn": ["Build Base Test", "Run Webpack", "Run Base Test"],
-            "dependsOrder": "sequence",
-        },
-        {
-            "label": "Build Base Test",
-            "type": "npm",
-            "script": "bBase",
-            "group": "build",
-            "problemMatcher": [],
-            "detail": "tsc src/get-200-status-test.ts --outDir dist"
-        },
-        {
-            "label": "Run Webpack",
-            "type": "npm",
-            "script": "start",
-            "group": "build",
-            "problemMatcher": [],
-            "detail": "webpack"
-        },
-        {
-            "label": "Run Base Test",
-            "type": "npm",
-            "script": "tBase",
-            "group": "build",
-            "problemMatcher": [],
-            "detail": "k6 run dist/get-200-status-test.js",
-            "dependsOn": "Build Base Test"
-        },
-        {
-            "label": "FULL Stress test",
-            "dependsOn": ["Build Stress Test", "Run Webpack", "Run Stress Test"],
-            "dependsOrder": "sequence",
-        },
-        {
-            "label": "Build Stress Test",
-            "type": "npm",
-            "script": "bStress",
-            "group": "build",
-            "problemMatcher": [],
-            "detail": "tsc src/get-200-status-test-stress.ts --outDir dist"
-        },
-        {
-            "label": "Run Webpack",
-            "type": "npm",
-            "script": "start",
-            "group": "build",
-            "problemMatcher": [],
-            "detail": "webpack"
-        },
-        {
-            "label": "Run Stress Test",
-            "type": "npm",
-            "script": "tStress",
-            "group": "build",
-            "problemMatcher": [],
-            "detail": "k6 run dist/get-200-status-test-stress.js",
-            "dependsOn": "Build Stress Test"
-        },
-        {
-            "label": "FULL Post test",
-            "dependsOn": ["Build Post Test", "Run Webpack", "Run Post Test"],
-            "dependsOrder": "sequence",
-        },
-        {
-            "label": "Build Post Test",
-            "type": "npm",
-            "script": "bPost",
-            "group": "build",
-            "problemMatcher": [],
-            "detail": "tsc src/post-201-status-test.ts --outDir dist"
-        },
-        {
-            "label": "Run Webpack",
-            "type": "npm",
-            "script": "start",
-            "group": "build",
-            "problemMatcher": [],
-            "detail": "webpack"
-        },
-        {
-            "label": "Run Post Test",
-            "type": "npm",
-            "script": "tPost",
-            "group": "build",
-            "problemMatcher": [],
-            "detail": "k6 run dist/post-201-status-test.js",
-            "dependsOn": "Build Post Test"
-        }
-    ]
-}
+// {
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "label": "FULL Base test",
+//             "dependsOn": ["Build Base Test", "Run Webpack", "Run Base Test"],
+//             "dependsOrder": "sequence",
+//         },
+//         {
+//             "label": "Build Base Test",
+//             "type": "npm",
+//             "script": "bBase",
+//             "group": "build",
+//             "problemMatcher": [],
+//             "detail": "tsc src/get-200-status-test.ts --outDir dist"
+//         },
+//         {
+//             "label": "Run Webpack",
+//             "type": "npm",
+//             "script": "start",
+//             "group": "build",
+//             "problemMatcher": [],
+//             "detail": "webpack"
+//         },
+//         {
+//             "label": "Run Base Test",
+//             "type": "npm",
+//             "script": "tBase",
+//             "group": "build",
+//             "problemMatcher": [],
+//             "detail": "k6 run dist/get-200-status-test.js",
+//             "dependsOn": "Build Base Test"
+//         },
+//         {
+//             "label": "FULL Stress test",
+//             "dependsOn": ["Build Stress Test", "Run Webpack", "Run Stress Test"],
+//             "dependsOrder": "sequence",
+//         },
+//         {
+//             "label": "Build Stress Test",
+//             "type": "npm",
+//             "script": "bStress",
+//             "group": "build",
+//             "problemMatcher": [],
+//             "detail": "tsc src/get-200-status-test-stress.ts --outDir dist"
+//         },
+//         {
+//             "label": "Run Webpack",
+//             "type": "npm",
+//             "script": "start",
+//             "group": "build",
+//             "problemMatcher": [],
+//             "detail": "webpack"
+//         },
+//         {
+//             "label": "Run Stress Test",
+//             "type": "npm",
+//             "script": "tStress",
+//             "group": "build",
+//             "problemMatcher": [],
+//             "detail": "k6 run dist/get-200-status-test-stress.js",
+//             "dependsOn": "Build Stress Test"
+//         },
+//         {
+//             "label": "FULL Post test",
+//             "dependsOn": ["Build Post Test", "Run Webpack", "Run Post Test"],
+//             "dependsOrder": "sequence",
+//         },
+//         {
+//             "label": "Build Post Test",
+//             "type": "npm",
+//             "script": "bPost",
+//             "group": "build",
+//             "problemMatcher": [],
+//             "detail": "tsc src/post-201-status-test.ts --outDir dist"
+//         },
+//         {
+//             "label": "Run Webpack",
+//             "type": "npm",
+//             "script": "start",
+//             "group": "build",
+//             "problemMatcher": [],
+//             "detail": "webpack"
+//         },
+//         {
+//             "label": "Run Post Test",
+//             "type": "npm",
+//             "script": "tPost",
+//             "group": "build",
+//             "problemMatcher": [],
+//             "detail": "k6 run dist/post-201-status-test.js",
+//             "dependsOn": "Build Post Test"
+//         }
+//     ]
+// }

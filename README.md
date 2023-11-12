@@ -10,7 +10,7 @@ Repository for my performance testing with k6.
 ## Tutorial Explanation
 
 - I predefined the scripts, so you can just choose which to run
-- To see the scripts see package.json and .vscode/tasks.json
+- To see the scripts see package.json
 
 ## Notes
 - Keep in mind that I set the VU values specifically low, to not overload the public test API. :)
