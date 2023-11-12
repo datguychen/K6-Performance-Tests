@@ -29,6 +29,7 @@
     "test:post": "tsc src/post-base-test.ts --outDir dist && webpack && k6 run dist/post-base-test.js",
     "test:smoke": "tsc src/smoke-test.ts --outDir dist && webpack && k6 run dist/smoke-test.js",
     "test:spike": "tsc src/spike-test.ts --outDir dist && webpack && k6 run dist/spike-test.js",
-    "test:breakpoint": "tsc src/breakpoint-test.ts --outDir dist && webpack && k6 run dist/breakpoint-test.js"
+    "test:breakpoint": "tsc src/breakpoint-test.ts --outDir dist && webpack && k6 run dist/breakpoint-test.js",
+    "test:soak": "tsc src/soak-test.ts --outDir dist && webpack && k6 run dist/soak-test.js"
   }
 }
