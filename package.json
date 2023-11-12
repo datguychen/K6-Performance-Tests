@@ -23,11 +23,8 @@
   },
   "scripts": {
     "start": "webpack",
-    "bStress": "tsc src/get-200-status-test-stress.ts --outDir dist",
-    "tStress": "k6 run dist/get-200-status-test-stress.js",
-    "bBase": "tsc src/get-200-status-test.ts --outDir dist",
-    "tBase": "k6 run dist/get-200-status-test.js",
-    "bPost": "tsc src/post-201-status-test.ts --outDir dist",
-    "tPost": "k6 run dist/post-201-status-test.js"
+    "test:stress": "tsc src/get-200-status-test-stress.ts --outDir dist && webpack && k6 run dist/get-200-status-test-stress.js",
+    "test:base": "tsc src/get-200-status-test.ts --outDir dist && webpack && k6 run dist/get-200-status-test.js",
+    "test:post": "tsc src/post-201-status-test.ts --outDir dist && webpack && k6 run dist/post-201-status-test.js"
   }
 }
