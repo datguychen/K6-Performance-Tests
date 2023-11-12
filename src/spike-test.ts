@@ -7,7 +7,6 @@ import http from 'k6/http';
 export let options:Options = {
   stages: [
     { duration: '60s', target: 80 }, //spike
-    { duration: '10s', target: 40 },
     { duration: '10s', target: 1 },
   ]
 };
