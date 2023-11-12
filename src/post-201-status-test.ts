@@ -23,10 +23,10 @@ export default function () {
     },
   };
 
-  let res = http.post('https://test-api.k6.io/user/register/', payload, params);
-  console.log(res.body);
+  let response = http.post('https://test-api.k6.io/user/register/', payload, params);
+  console.log(response.body);
 
-  check(res, {
+  check(response, {
     'status is 201': (r) => r.status === 201,
   });
   sleep(1);

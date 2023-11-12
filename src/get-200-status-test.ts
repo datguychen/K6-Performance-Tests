@@ -8,9 +8,9 @@ export let options:Options = {
 };
 
 export default () => {
-  const res = http.get('https://test-api.k6.io/public/crocodiles/');
-  check(res, {
-    'status is 200': () => res.status === 200,
+  const response = http.get('https://test-api.k6.io/public/crocodiles/');
+  check(response, {
+    'status is 200': () => response.status === 200,
   });
   sleep(1); //1 call per second
 };
