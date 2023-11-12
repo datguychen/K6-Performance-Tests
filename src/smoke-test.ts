@@ -3,6 +3,7 @@ import { Options } from 'k6/options';
 import http from 'k6/http';
 
 //We need only 1 VU for this test, because smoke test only checks if the API is up and running properly
+//Preliminary test to ensure basic functionalities work before detailed testing.
 
 export let options:Options = {
   vus: 1,

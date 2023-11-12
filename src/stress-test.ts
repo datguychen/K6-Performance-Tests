@@ -2,13 +2,14 @@ import { sleep, check } from 'k6';
 import { Options } from 'k6/options';
 import http from 'k6/http';
 
-//Assess system performance under normal conditions with expected user loads.
+//Evaluate system robustness by pushing it beyond normal capacity.
+//Take all TARGET values from load-test.ts and multiply by 2
 
 export let options:Options = {
   stages: [
-    { duration: '10s', target: 10 }, //time should be ~5 minutes, but for this project I will simulate it for a short period.
-    { duration: '60s', target: 10 }, //time should be ~30 minutes
-    { duration: '10s', target: 5 },
+    { duration: '10s', target: 20 },
+    { duration: '60s', target: 20 },
+    { duration: '10s', target: 10 },
     { duration: '10s', target: 1 },
   ]
 };
