@@ -4,8 +4,9 @@ import http from 'k6/http';
 
 export let options:Options = {
   stages: [
-    { duration: '20s', target: 5 },
-    { duration: '30s', target: 15 },
+    { duration: '10s', target: 10 }, //time should be ~5 minutes, but for this project I will simulate it for a short period.
+    { duration: '60s', target: 10 }, //time should be ~30 minutes
+    { duration: '10s', target: 1 },
   ]
 };
 
