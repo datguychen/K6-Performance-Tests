@@ -2,9 +2,8 @@
   "name": "typescript",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "ssh://git@github.com/k6io/example-typescript.git",
-  "author": "Simon Aronsson <simme@k6.io>",
-  "license": "MIT",
+  "repository": "ssh://git@github.com/datguychen/K6-Performance-Tests.git",
+  "author": "Adam Świderski",
   "devDependencies": {
     "@babel/core": "7.13.16",
     "@babel/plugin-proposal-class-properties": "7.13.0",
@@ -30,6 +29,7 @@
     "test:smoke": "tsc src/smoke-test.ts --outDir dist && webpack && k6 run dist/smoke-test.js",
     "test:spike": "tsc src/spike-test.ts --outDir dist && webpack && k6 run dist/spike-test.js",
     "test:breakpoint": "tsc src/breakpoint-test.ts --outDir dist && webpack && k6 run dist/breakpoint-test.js",
-    "test:soak": "tsc src/soak-test.ts --outDir dist && webpack && k6 run dist/soak-test.js"
+    "test:soak": "tsc src/soak-test.ts --outDir dist && webpack && k6 run dist/soak-test.js",
+    "test:assertions": "tsc src/assertions-test.ts --outDir dist && webpack && k6 run dist/assertions-test.js"
   }
 }
