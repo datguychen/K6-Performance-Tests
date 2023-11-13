@@ -31,6 +31,8 @@
     "test:breakpoint": "tsc src/breakpoint-test.ts --outDir dist && webpack && k6 run dist/breakpoint-test.js",
     "test:soak": "tsc src/soak-test.ts --outDir dist && webpack && k6 run dist/soak-test.js",
     "test:assertions": "tsc src/assertions-test.ts --outDir dist && webpack && k6 run dist/assertions-test.js",
-    "test:metrics": "tsc src/metric-types-test.ts --outDir dist && webpack && k6 run dist/metric-types-test.js"
+    "test:metrics": "tsc src/metric-types-test.ts --outDir dist && webpack && k6 run dist/metric-types-test.js",
+    "test:tags": "tsc src/tags-test.ts --outDir dist && webpack && k6 run dist/tags-test.js",
+    "test:tagscustom": "tsc src/tags-test-custom.ts --outDir dist && webpack && k6 run dist/tags-test-custom.js"
   }
 }
