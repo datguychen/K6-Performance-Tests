@@ -33,6 +33,7 @@
     "test:assertions": "tsc src/assertions-test.ts --outDir dist && webpack && k6 run dist/assertions-test.js",
     "test:metrics": "tsc src/metric-types-test.ts --outDir dist && webpack && k6 run dist/metric-types-test.js",
     "test:tags": "tsc src/tags-test.ts --outDir dist && webpack && k6 run dist/tags-test.js",
-    "test:tagscustom": "tsc src/tags-test-custom.ts --outDir dist && webpack && k6 run dist/tags-test-custom.js"
+    "test:tagscustom": "tsc src/tags-test-custom.ts --outDir dist && webpack && k6 run dist/tags-test-custom.js",
+    "test:groups": "tsc src/group-test.ts --outDir dist && webpack && k6 run dist/group-test.js"
   }
 }
