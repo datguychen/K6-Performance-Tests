@@ -34,6 +34,7 @@
     "test:metrics": "tsc src/metric-types-test.ts --outDir dist && webpack && k6 run dist/metric-types-test.js",
     "test:tags": "tsc src/tags-test.ts --outDir dist && webpack && k6 run dist/tags-test.js",
     "test:tagscustom": "tsc src/tags-test-custom.ts --outDir dist && webpack && k6 run dist/tags-test-custom.js",
-    "test:groups": "tsc src/group-test.ts --outDir dist && webpack && k6 run dist/group-test.js"
+    "test:groups": "tsc src/group-test.ts --outDir dist && webpack && k6 run dist/group-test.js",
+    "test:lifecycle": "tsc src/k6-lifecycle-test.ts --outDir dist && webpack && k6 run dist/k6-lifecycle-test.js"
   }
 }
