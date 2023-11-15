@@ -37,6 +37,7 @@
     "test:groups": "tsc src/13-group-test.ts --outDir dist && webpack && k6 run dist/13-group-test.js",
     "test:lifecycle": "tsc src/14-k6-test-lifecycle.ts --outDir dist && webpack && k6 run dist/14-k6-test-lifecycle.js",
     "test:abort": "tsc src/15-test-abort.ts --outDir dist && webpack && k6 run dist/15-test-abort.js",
-    "test:request:correlation": "tsc src/16-req-correlation.ts --outDir dist && webpack && k6 run dist/16-req-correlation.js"
+    "test:request:correlation": "tsc src/16-req-correlation.ts --outDir dist && webpack && k6 run dist/16-req-correlation.js",
+    "test:http:post": "tsc src/17-http-post.ts --outDir dist && webpack && k6 run --http-debug='full' dist/17-http-post.js"
   }
 }
