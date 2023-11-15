@@ -20,6 +20,10 @@ export default function () {
                 'status is 200': () => res2.status === 200,
                 'crocodile name': () => JSON.parse(res2.body as string).name === crocodileName
             });
+        } else{
+            console.log('No crocodiles found');
         }
+    } else {
+        console.log('No response found');
     }
 }
