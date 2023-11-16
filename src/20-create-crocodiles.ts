@@ -43,4 +43,11 @@ export default function () {
         'status is 201 for creation': () => resCroc.status === 201,
     });
 
+    const resCrocGet = http.get('https://test-api.k6.io/my/crocodiles/', paramsCroc);
+    const resCrodId = JSON.parse(resCrocGet.body as string)[0].id
+    console.log("Crocodile ID: " + resCrodId)
+
+    check(resCrocGet, {
+        'Get crocodile ID': () => resCrodId === 12690395,
+    });
 }
