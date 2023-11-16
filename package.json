@@ -45,6 +45,7 @@
     "test:updatecroc": "tsc src/21-put-crocodile.ts --outDir dist && webpack && k6 run --http-debug='full' dist/21-put-crocodile.js",
     "test:envvar": "tsc src/22-env-variables.ts --outDir dist && webpack && k6 run -e BASE_URL=https://test-api.k6.io --http-debug='full' dist/22-env-variables.js",
     "test:rand:sleep": "tsc src/23-random-sleep.ts --outDir dist && webpack && k6 run dist/23-random-sleep.js",
-    "test:rand:string": "tsc src/24-random-string.ts --outDir dist && webpack && k6 run dist/24-random-string.js"
+    "test:rand:string": "tsc src/24-random-string.ts --outDir dist && webpack && k6 run dist/24-random-string.js",
+    "test:rand:item": "tsc src/25-random-item.ts --outDir dist && webpack && k6 run dist/25-random-item.js"
   }
 }
