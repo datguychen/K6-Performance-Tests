@@ -3,10 +3,10 @@ import { check } from 'k6';
       
 
 export default function () {
-    const randomText = (Math.random() + 1).toString(36).substring(7);
+    //const randomText = (Math.random() + 1).toString(36).substring(7);
 
     const body = JSON.stringify({
-        username: 'chen_' + randomText + '_' + Date.now(),
+        username: 'chen_testtoken',
         password: 'chen'
     });
 
