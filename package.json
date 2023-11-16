@@ -43,6 +43,7 @@
     "test:http:get:auth": "tsc src/19-http-authentication.ts --outDir dist && webpack && k6 run --http-debug='full' dist/19-http-authentication.js",
     "test:createcroc": "tsc src/20-create-crocodiles.ts --outDir dist && webpack && k6 run --http-debug='full' dist/20-create-crocodiles.js",
     "test:updatecroc": "tsc src/21-put-crocodile.ts --outDir dist && webpack && k6 run --http-debug='full' dist/21-put-crocodile.js",
-    "test:envvar": "tsc src/22-env-variables.ts --outDir dist && webpack && k6 run -e BASE_URL=https://test-api.k6.io --http-debug='full' dist/22-env-variables.js"
+    "test:envvar": "tsc src/22-env-variables.ts --outDir dist && webpack && k6 run -e BASE_URL=https://test-api.k6.io --http-debug='full' dist/22-env-variables.js",
+    "test:rand:sleep": "tsc src/23-random-sleep.ts --outDir dist && webpack && k6 run dist/23-random-sleep.js"
   }
 }
