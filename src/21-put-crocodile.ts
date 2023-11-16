@@ -88,4 +88,4 @@ export default function () {
     };
 }
 
-//TODO: Create a nice looking code with 10 VUS creating many crocodiles at once and then updating them while validating the data
+//TODO: Create a nice looking code with 10 VUS load test creating many crocodiles at once and then updating them while validating the data
