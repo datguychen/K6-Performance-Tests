@@ -87,3 +87,5 @@ export default function () {
         console.log("Wrong Croc");
     };
 }
+
+//TODO: Create a nice looking code with 10 VUS creating many crocodiles at once and then updating them while validating the data
