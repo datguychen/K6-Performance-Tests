@@ -39,6 +39,7 @@
     "test:abort": "tsc src/15-test-abort.ts --outDir dist && webpack && k6 run dist/15-test-abort.js",
     "test:request:correlation": "tsc src/16-req-correlation.ts --outDir dist && webpack && k6 run dist/16-req-correlation.js",
     "test:http:post": "tsc src/17-http-post.ts --outDir dist && webpack && k6 run --http-debug='full' dist/17-http-post.js",
-    "test:http:post:token": "tsc src/18-http-post-token.ts --outDir dist && webpack && k6 run --http-debug='full' dist/18-http-post-token.js"
+    "test:http:post:token": "tsc src/18-http-post-token.ts --outDir dist && webpack && k6 run --http-debug='full' dist/18-http-post-token.js",
+    "test:http:get:auth": "tsc src/19-http-authentication.ts --outDir dist && webpack && k6 run --http-debug='full' dist/19-http-authentication.js"
   }
 }
