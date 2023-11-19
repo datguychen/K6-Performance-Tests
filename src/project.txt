@@ -2,4 +2,4 @@
 2. Make valid assertions on each steps
 3. Add custom tags
 4. All steps should be imported from Utils folder (need to create one first)
-5. Add a reporter to the test
+5. Add a reporter to the test (https://github.com/benc-uk/k6-reporter)
